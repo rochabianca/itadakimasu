@@ -240,9 +240,31 @@ table {
 
 .menu {
   display: flex;
+  justify-content: space-between;
 }
 
 .logo {
   display: inline-block;
   padding: 10px;
+}
+
+.pesquisa {
+  display: flex;
+  align-items: center;
+}
+
+.box {
+  background: #fff;
+  border: 1px solid #eeeeee;
+  padding: 5px 10px;
+}
+
+.box img {
+  width: 20px;
+}
+
+.input input {
+  width: 300px;
+  max-width: 300px;
+  padding: 9px;
 }
