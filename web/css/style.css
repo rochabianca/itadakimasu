@@ -220,10 +220,15 @@ table {
 }
 
 .header {
-  padding: 15px 20px;
+  padding: 15px 15px;
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-size: 15px;
   background: #9A2616;
   color: #fff;
+}
+
+.header ul {
+  display: inline-block;
 }
 
 .header ul li {
@@ -235,7 +240,7 @@ table {
 .header ul li a {
   text-decoration: none;
   color: #fff;
-  padding: 10px 15px;
+  padding: 10px 10px;
 }
 
 .menu {
@@ -256,7 +261,7 @@ table {
 .box {
   background: #fff;
   border: 1px solid #eeeeee;
-  padding: 5px 10px;
+  padding: 6px 10px;
 }
 
 .box img {
@@ -267,4 +272,24 @@ table {
   width: 300px;
   max-width: 300px;
   padding: 9px;
+  border: 1px solid #eeeeee;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: -20px;
+  text-align: right;
+  position: relative;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  background: #fff;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: #9A2616;
 }

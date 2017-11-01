@@ -2,3 +2,22 @@
 @import '_reset';
 @import '_grid';
 @import '_header';
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.owl-theme .owl-nav.disabled+.owl-dots {
+  margin-top: -20px;
+  text-align: right;
+  position: relative;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  background: $branco;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: $primary;
+}
