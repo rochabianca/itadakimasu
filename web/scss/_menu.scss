@@ -1,0 +1,243 @@
+.header {
+  background: $primary;
+  padding: 10px;
+}
+
+
+.logo {
+  display: inline-block;
+  float: left;
+	margin-top: 15px;
+	a {
+		text-decoration: none;
+		color: $branco;
+		font-size: 24px;
+		font-family: $fonte;
+		font-weight: 800;
+	}
+}
+
+.flex {
+	display: flex;
+	justify-content: flex-end;
+}
+
+
+.menu ul li{
+  display: inline-flex;
+ }
+
+.menu ul li a {
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 0px;
+  color: $branco;
+  @include tipo-2(18);
+
+  &::after {
+    content: '';
+	  display: block;
+	  background: $branco;
+	  height: 2px;
+	  width: 0;
+	  transition: .5s;
+  }
+  &:hover::after {
+    width: 100%;
+  }
+}
+
+.menu ul li a.active {
+ &::after {
+	  width: 100%;
+ }
+}
+
+
+//Search
+
+.buscar-mobile {
+	display: none !important;
+	@include d(s) {
+		display: block !important;
+	}
+}
+
+.busca {
+	float: left;
+	padding-top: 10px;
+	@include d(s) {
+		display: none !important;
+	}
+}
+
+input {
+	outline: none;
+}
+input[type=search] {
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+	font-family: inherit;
+	font-size: 100%;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+	display: none; 
+}
+
+
+input[type=search] {
+  color: $branco;
+	background: url('../img/search-icon.png') no-repeat 9px center;
+	padding: 9px 10px 9px 32px;
+	width: 55px;
+  border: none;
+  @include tipo-2(14);
+	
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
+	border-radius: 10em;
+	
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}
+input[type=search]:focus {
+	width: 130px;
+	background-color: #fff;
+	border-color: $primary;
+  background: url('../img/search-icon-preto.png') no-repeat 9px center;
+	
+	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+
+
+input:-moz-placeholder {
+	color: $primary;
+}
+input::-webkit-input-placeholder {
+	color: $primary;
+}
+
+/* Demo 2 */
+#demo-2 input[type=search] {
+	width: 15px;
+  height: 15px;
+	padding-left: 10px;
+	color: transparent;
+	cursor: pointer;
+}
+#demo-2 input[type=search]:hover {
+  background: #fff url('../img/search-icon-preto.png') no-repeat 9px center;
+}
+#demo-2 input[type=search]:focus {
+	width: 130px;
+	padding-left: 32px;
+	color: #000;
+	background-color: #fff;
+	cursor: auto;
+}
+#demo-2 input:-moz-placeholder {
+	color: transparent;
+}
+#demo-2 input::-webkit-input-placeholder {
+	color: transparent;
+}
+
+
+//Menu mobile
+
+#origamid-menu {
+	visibility: hidden;
+	position: absolute;
+	background: black;
+	width: auto;
+	max-width: 180px;
+	padding: 20px;
+	right: 0;
+	top: 50px;
+	text-align: center;
+	opacity: 0;
+	transform: translate(-20px, 0px);
+	box-shadow: 0 2px 1px 0 rgba(0,0,0,.4);
+	z-index: 999;
+}
+
+#origamid-menu.active {
+  visibility: visible;
+	opacity: 1;
+	transform: translate(0px, 0px);
+	transition: .3s ease;
+}
+
+#origamid-menu li {
+	display: block;
+	padding: 0px;
+	margin: 0px;
+	border-top: 2px solid;
+}
+
+#origamid-menu li:last-of-type {
+	border-bottom: 2px solid;
+}
+
+#origamid-menu li a {
+	display: block;
+	float: none;
+	padding: 10px;
+	margin: 0px;
+	border: none;
+	min-width: 140px;
+}
+
+#origamid-menu li a:hover {
+	background: white;
+	color: black;
+}
+
+/* Ícone do Menu no mobile */
+
+#origamid-icon {
+	display: block;
+	float: right;
+	width: 40px;
+	height: 30px;
+	padding: 5px 0;
+	box-sizing: border-box;
+	cursor: pointer;
+	padding-top: 15px;
+	margin-right: 10px;
+}
+
+#origamid-icon::before, #origamid-icon::after {
+	content: '';
+	display: block;
+	height: 4px;
+	transition: .3s;
+}
+
+#origamid-icon::before {
+	background: white;
+	margin-bottom: 8px;
+}
+
+#origamid-icon::after {
+	box-shadow: 0 4px 0 0 white, 0 -4px 0 0 white;
+}
+
+#origamid-icon.active::before, #origamid-icon.active::after {
+	width: 80%;
+	background: white;
+	box-shadow: none;
+}
+
+#origamid-icon.active::before {
+	transform: rotate(45deg) translate(7px, 4px);
+}
+
+#origamid-icon.active::after {
+	transform: rotate(-225deg) translate(-4px, 1px);
+}

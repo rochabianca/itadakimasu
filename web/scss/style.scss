@@ -1,7 +1,9 @@
 @import '_variaveis-mixins';
 @import '_reset';
 @import '_grid';
-@import '_header';
+@import '_essencials';
+@import '_menu';
+
 
 img {
   display: block;
@@ -12,12 +14,224 @@ img {
   margin-top: -20px;
   text-align: right;
   position: relative;
+
+  @include d(s) {
+    margin: 0px;
+  }
 }
 
 .owl-theme .owl-dots .owl-dot span {
-  background: $branco;
+  background: #eee;
 }
 
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
   background: $primary;
+}
+
+
+.espaco {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.titulo {
+  color: $primary;
+  @include tipo-1(36);
+  text-align: center;
+  margin-bottom: 30px;
+
+  &::after {
+    content: '';
+    display: block;
+    background: $primary;
+    width: 60px;
+    height: 4px;
+    margin: 10px auto;
+  }
+}
+
+.subtitulo {
+  color: primary;
+  @include tipo-1(36);
+  text-align: left;
+  margin-bottom: 30px;
+
+  &::after {
+    content: '';
+    display: block;
+    background: $primary;
+    width: 60px;
+    height: 4px;
+    margin: 10px 0px;
+  }
+}
+
+.menor {
+  color: $branco;
+  margin-bottom: 15px;
+  @include tipo-1(24);
+  text-transform: none;
+  &::after {
+    background: $branco;
+  } 
+}
+
+.chamada {
+  margin-top: 20px;
+  p {
+    color: $primary;
+    text-align: center;
+    @include tipo-2(18);
+    margin-bottom: 15px;
+  }
+}
+
+//Linhas Divisórias
+
+hr.linha {
+  padding: 0px;
+  
+  display: block;
+  height: 8px;
+  margin: 0px;
+  border-width: 0px;
+  width: 100%;
+}
+
+.btn {
+  text-align: center;
+  margin: 0 auto;
+  @include tipo-2(18);
+  font-weight: bold;
+  color: $branco;
+  display: block;
+  width: 220px;
+  height: 60px;
+  padding: 15px 10px;
+  border-radius: 10px;
+  transition: .5s;
+}
+
+.btn-roxo {
+  background: $primary;
+  &:hover {
+    background: #864DD9;
+  }
+}
+
+.btn-roxo-escuro {
+  background: $primary;
+  &:hover {
+    background: #864DD9;
+  }
+}
+
+.btn-carrinho {
+  @include tipo-1(14);
+  padding: 10px;
+  height: 40px;
+  background: $primary;
+  margin: 0px;
+  cursor: pointer;
+  &:hover {
+    background: $primary;
+  }
+  @include d(s) {
+    height: 55px;
+  }
+}
+
+.album {
+  margin-top: 15px;
+  text-align: center;
+  color: $preto;
+  @include tipo-1(18);
+  text-transform: none;
+}
+
+.albuns {
+  margin-top: 15px;
+  text-align: left;
+  color: $primary;
+  @include tipo-1(18);
+  text-transform: none;
+}
+
+.artista {
+  text-align: center;
+  color: $primary;
+  @include tipo-1(18);
+  text-transform: none;
+}
+
+//Footer
+
+
+hr.linha {
+  padding: 0px;
+  
+  display: block;
+  height: 8px;
+  margin: 0px;
+  border-width: 0px;
+  width: 100%;
+}
+
+.primary {
+  background: $primary;
+}
+
+
+.footer {
+  background: $preto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  p {
+    @include tipo-2(14);
+    color: $branco;
+  }
+  div div {
+    @include d(s) {
+      margin-bottom: 20px;
+    }
+  }
+  @include d(s) {
+    padding-bottom: 0px;
+  }
+}
+
+.redes {
+  display: inline-block;
+  margin-left: 5px;
+  img {
+    padding: 5px;
+  }
+}
+
+.sub-footer {
+  font-family: $fonte;
+  font-size: em(14, 16);
+  background: $primary;
+  padding: 20px;
+  color: $branco;
+  text-align: left;
+  p {
+    margin-left: 10px;
+    @include d(s) {
+      margin-left: 0px;
+    }
+  }
+  @include d(s) {
+    font-size: em(14, 16);
+    color: $branco;
+    padding: 20px 20px 20px 0px;
+  }
+
+}
+
+.banner {
+  width: 100%;
+  @include d(s) {
+    height: 300px;
+  }
 }

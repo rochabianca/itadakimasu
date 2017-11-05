@@ -39,6 +39,7 @@ module.exports = function(grunt) {
             },
             files: [
               'index.html',
+              'combos.html',
               'css/style.min.css',
               'img/*.{png,jpg,gif}'
             ],
