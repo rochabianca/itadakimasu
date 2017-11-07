@@ -35,7 +35,7 @@ img {
 }
 
 .titulo {
-  color: $primary;
+  color: $preto;
   @include tipo-1(36);
   text-align: center;
   margin-bottom: 30px;
@@ -43,11 +43,18 @@ img {
   &::after {
     content: '';
     display: block;
-    background: $primary;
+    background: $preto;
     width: 60px;
     height: 4px;
     margin: 10px auto;
   }
+}
+
+.prato {
+  color: $preto;
+  @include tipo-1(36);
+  text-align: left;
+  margin-bottom: 30px;
 }
 
 .subtitulo {
@@ -112,10 +119,14 @@ hr.linha {
   transition: .5s;
 }
 
+.btn-all {
+  width: 100%;
+}
+
 .btn-roxo {
   background: $primary;
   &:hover {
-    background: #864DD9;
+    background: #000000;
   }
 }
 
@@ -234,4 +245,27 @@ hr.linha {
   @include d(s) {
     height: 300px;
   }
+}
+
+.top-divider {
+  padding-top: 60px;
+}
+
+.img-product {
+  width: 80%;
+}
+
+.description {
+  font-family: $fonte;
+  @include tipo-2(14);
+  padding-bottom: 30px;
+}
+
+.divider {
+  margin-bottom: 10px;
+}
+
+.maior {
+  font-size: 24px;
+  margin-top: -5px;
 }

@@ -38,7 +38,7 @@ module.exports = function(grunt) {
               livereload: true
             },
             files: [
-              'index.html',
+              '*.html',
               'combos.html',
               'css/style.min.css',
               'img/*.{png,jpg,gif}'
