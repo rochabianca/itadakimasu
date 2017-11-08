@@ -50,27 +50,36 @@
 
 
   <section class="contato container  top-divider">
-    <h1 class="titulo">Entrar / Cadastrar-se</h1>
+    <h1 class="titulo">Endereço e Forma de Pagamento</h1>
     <div class="bg">
     <form name="form" class="formphp grid-6 contato_form  float-l">
-      <label for="email">E-mail</label>
+      <label for="email">Endereço</label>
       <input id="email" name="email" type="text">
-      <label for="telefone">Senha</label>
-      <input id="telefone" name="telefone" type="text">
+      <label for="telefone">Complemento</label>
+      <input id="complemento" name="telefone" type="text">
+      <label for="complemento">Telefone</label>
+      <input id="complemento" name="complemento" type="text">
 
-      <a href="pagamento.html" class="btn btn-roxo">Entrar</a>
     </form>
   </div>
 
     <form name="form" class="formphp grid-6 contato_form  float-l">
-        <label for="nome">Nome</label>
+        <input class="checkbox" type="checkbox" name="foda-se" value="eu to cansada">Cartão de Crédito
+
+        <label for="nome">Nome no cartão</label>
         <input id="nome" name="nome" type="text">
-        <label for="email">E-mail</label>
-        <input id="email" name="email" type="text">
-        <label for="telefone">Senha</label>
-        <input id="telefone" name="telefone" type="text">
+        <label for="email">Número do Cartão</label>
+        <input style="width: 90%" id="email" name="email" type="text">
+        <label for="telefone">CVV</label>
+        <input style="width: 10%; margin-bottom: 30px;" id="telefone" name="telefone" type="text">
+
+        <input class="checkbox" type="checkbox" name="foda-se" value="eu to cansada">Dinheiro
+        
+        <label class="divider-bottom" for="telefone">Troco para:
+        <input style="width: 10%; display: inline;" id="telefone" name="telefone" type="text">
+      </label>
   
-        <a href="pagamento.html" class="btn btn-roxo">Entrar</a>
+        <a href="fim.html" class="btn btn-roxo">Finalizar Compra</a>
       </form>
 
   </section>

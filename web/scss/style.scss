@@ -247,6 +247,7 @@ hr.linha {
   }
 }
 
+
 .top-divider {
   padding-top: 60px;
 }
@@ -268,4 +269,35 @@ hr.linha {
 .maior {
   font-size: 24px;
   margin-top: -5px;
+}
+
+.float-l {
+  float: left;
+}
+
+.space {
+  padding-bottom: 60px;
+}
+
+.divider-bottom {
+  padding-bottom: 30px;
+}
+
+@import '_form';
+
+.checkbox {
+  display: inline !important;
+  width: auto !important;
+  @include tipo-2(14);
+}
+
+.fim {
+  text-align: center;
+  @include tipo-2(18);
+}
+
+.fim-img {
+  padding-top: 20px;
+  margin: 0 auto;
+  padding-bottom: 60px;
 }
