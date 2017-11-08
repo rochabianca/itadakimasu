@@ -58,7 +58,7 @@ img {
 }
 
 .subtitulo {
-  color: primary;
+  color: $preto;
   @include tipo-1(36);
   text-align: left;
   margin-bottom: 30px;
@@ -66,11 +66,15 @@ img {
   &::after {
     content: '';
     display: block;
-    background: $primary;
+    background: $preto;
     width: 60px;
     height: 4px;
     margin: 10px 0px;
   }
+}
+
+.margin-subtitulo {
+  margin-left: 10%;
 }
 
 .menor {
@@ -130,6 +134,7 @@ hr.linha {
   }
 }
 
+
 .btn-roxo-escuro {
   background: $primary;
   &:hover {
@@ -151,6 +156,17 @@ hr.linha {
     height: 55px;
   }
 }
+
+.btn-preto {
+  background: $preto;
+  &:hover {
+    background: $primary;
+  }
+  @include d(s) {
+    margin: 0 10%;
+  }
+}
+
 
 .album {
   margin-top: 15px;
@@ -247,7 +263,6 @@ hr.linha {
   }
 }
 
-
 .top-divider {
   padding-top: 60px;
 }
@@ -273,6 +288,9 @@ hr.linha {
 
 .float-l {
   float: left;
+  @include d(s) {
+    float: none;
+  }
 }
 
 .space {
@@ -300,4 +318,8 @@ hr.linha {
   padding-top: 20px;
   margin: 0 auto;
   padding-bottom: 60px;
+}
+
+.top-space {
+  margin-top: 30px;
 }

@@ -1,8 +1,3 @@
-.interna_contato {
-  background: url("../img/bg-contato.jpg");
-  background-size: cover;
-}
-
 .contato {
   padding: 40px 0;
 }
@@ -14,23 +9,33 @@
 .contato_form label {
   display: block;
 
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: $fonte;
   font-size: 18px;
   line-height: 25px;
   margin-bottom: 4px;
+  margin-left: 10%;
+
 }
 
-.contato_form input, .contato_form textarea {
+.contato_form input {
   display: block;
-  width: 100%;
-  border: 2px solid $primary;
-  background: none;
+  width: 80%;
+  // border: 2px solid $primary;
+  border: none;
+  border-radius: 7px;
+  background: #eeeeee;
+  margin: 0 auto;
 
   padding: 7px 10px;
   margin-bottom: 10px;
   outline: none;
   font-size: 14px;
   font-family: Georgia, 'Times New Roman', serif;
+
+  @include d(s) {
+    width: 100%;
+    margin: 0 10%;
+  }
 }
 
 .contato_form textarea {

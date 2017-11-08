@@ -534,7 +534,7 @@ img {
 }
 
 .subtitulo {
-  color: primary;
+  color: #000;
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
@@ -547,10 +547,14 @@ img {
 .subtitulo::after {
   content: '';
   display: block;
-  background: #9A2616;
+  background: #000;
   width: 60px;
   height: 4px;
   margin: 10px 0px;
+}
+
+.margin-subtitulo {
+  margin-left: 10%;
 }
 
 .menor {
@@ -646,6 +650,20 @@ hr.linha {
 @media screen and (max-width: 759px) {
   .btn-carrinho {
     height: 55px;
+  }
+}
+
+.btn-preto {
+  background: #000;
+}
+
+.btn-preto:hover {
+  background: #9A2616;
+}
+
+@media screen and (max-width: 759px) {
+  .btn-preto {
+    margin: 0 10%;
   }
 }
 
@@ -797,17 +815,18 @@ hr.linha {
   float: left;
 }
 
+@media screen and (max-width: 759px) {
+  .float-l {
+    float: none;
+  }
+}
+
 .space {
   padding-bottom: 60px;
 }
 
 .divider-bottom {
   padding-bottom: 30px;
-}
-
-.interna_contato {
-  background: url("../img/bg-contato.jpg");
-  background-size: cover;
 }
 
 .contato {
@@ -820,22 +839,32 @@ hr.linha {
 
 .contato_form label {
   display: block;
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
   font-size: 18px;
   line-height: 25px;
   margin-bottom: 4px;
+  margin-left: 10%;
 }
 
-.contato_form input, .contato_form textarea {
+.contato_form input {
   display: block;
-  width: 100%;
-  border: 2px solid #9A2616;
-  background: none;
+  width: 80%;
+  border: none;
+  border-radius: 7px;
+  background: #eeeeee;
+  margin: 0 auto;
   padding: 7px 10px;
   margin-bottom: 10px;
   outline: none;
   font-size: 14px;
   font-family: Georgia, 'Times New Roman', serif;
+}
+
+@media screen and (max-width: 759px) {
+  .contato_form input {
+    width: 100%;
+    margin: 0 10%;
+  }
 }
 
 .contato_form textarea {
@@ -920,4 +949,8 @@ hr.linha {
   padding-top: 20px;
   margin: 0 auto;
   padding-bottom: 60px;
+}
+
+.top-space {
+  margin-top: 30px;
 }
