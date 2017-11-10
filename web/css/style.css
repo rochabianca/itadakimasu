@@ -553,10 +553,6 @@ img {
   margin: 10px 0px;
 }
 
-.margin-subtitulo {
-  margin-left: 10%;
-}
-
 .menor {
   color: #fff;
   margin-bottom: 15px;
@@ -837,6 +833,13 @@ hr.linha {
   padding-right: 60px;
 }
 
+@media screen and (max-width: 759px) {
+  .contato_form {
+    padding-right: 0px;
+    margin: 0 auto;
+  }
+}
+
 .contato_form label {
   display: block;
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
@@ -953,4 +956,36 @@ hr.linha {
 
 .top-space {
   margin-top: 30px;
+}
+
+.margin-subtitulo {
+  margin-left: 10% !important;
+}
+
+input[type=radio] + label {
+  display: inline-block;
+  height: 20px;
+  padding: 0 0 0px 25px;
+  margin: 0 10px 15px 0;
+  background-image: url(http://www.webcis.com.br/images/imagens-noticias/checkbox/ico-master.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+input[type=radio]:checked + label {
+  background-position: 0 -30px;
+}
+
+input[type=radio] {
+  display: none;
+  /* Esconde os inputs */
+}
+
+.dinheiro {
+  display: inline-block;
+}
+
+.dinheiro input {
+  display: inline-block;
+  width: 15%;
 }

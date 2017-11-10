@@ -28,7 +28,7 @@
           <li class="buscar-mobile"><a href="#">Buscar</a></li>
           <li><a href="#">Tipos de Sushi</a></li>  
           <li><a href="combos.html">Combos</a></li>
-          <li><a class="active" href="entrar-cadastro,html">Entrar / Cadastrar-se</a></li>
+          <li><a href="entrar-cadastro,html">Entrar / Cadastrar-se</a></li>
         </ul>
       </nav>
 
@@ -50,9 +50,9 @@
 
 
   <section class="contato container  top-divider">
-    <h1 class="titulo">Endereço e Forma de Pagamento</h1>
-    <div class="bg">
-    <form name="form" class="formphp grid-6 contato_form  float-l">
+    
+    <form name="form" class="formphp grid-6 contato_form  float-l divider-bottom ">
+      <h1 class="subtitulo margin-subtitulo">Endereço</h1>
       <label for="email">Endereço</label>
       <input id="email" name="email" type="text">
       <label for="telefone">Complemento</label>
@@ -61,23 +61,27 @@
       <input id="complemento" name="complemento" type="text">
 
     </form>
-  </div>
 
     <form name="form" class="formphp grid-6 contato_form  float-l">
-        <input class="checkbox" type="checkbox" name="foda-se" value="eu to cansada">Cartão de Crédito
+        <h1 class="subtitulo margin-subtitulo">Forma de Pagamento</h1>
+        <input type="radio" value="0" name="campo-radio" id="campo-radio1" />
+        <label class="margin-subtitulo" for="campo-radio1">Cartão de Crédito</label>
 
         <label for="nome">Nome no cartão</label>
         <input id="nome" name="nome" type="text">
-        <label for="email">Número do Cartão</label>
-        <input style="width: 90%" id="email" name="email" type="text">
+        <label for="cartao">Número do Cartão</label>
+        <input class="cartao"  id="cartao" name="email" type="text">
         <label for="telefone">CVV</label>
-        <input style="width: 10%; margin-bottom: 30px;" id="telefone" name="telefone" type="text">
+        <input class="cvv"  id="telefone" name="telefone" type="text">
 
-        <input class="checkbox" type="checkbox" name="foda-se" value="eu to cansada">Dinheiro
+        <div class="top-space">
+        <input  type="radio" value="0" name="campo-radio" id="campo-radio2" />
+        <label class="margin-subtitulo" for="campo-radio2">Dinheiro</label>
         
-        <label class="divider-bottom" for="telefone">Troco para:
-        <input style="width: 10%; display: inline;" id="telefone" name="telefone" type="text">
+        <label class="divider-bottom dinheiro" for="troco">Troco para:
+        <input id="telefone" name="troco" type="text">
       </label>
+    </div>
   
         <a href="fim.html" class="btn btn-roxo">Finalizar Compra</a>
       </form>

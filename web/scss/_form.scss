@@ -4,6 +4,11 @@
 
 .contato_form {
   padding-right: 60px;
+
+  @include d(s) {
+    padding-right: 0px;
+    margin: 0 auto;
+  }
 }
 
 .contato_form label {
