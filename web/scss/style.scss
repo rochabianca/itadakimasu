@@ -347,5 +347,51 @@ input[type=radio] {
   input {
     display: inline-block;
     width: 15%;
+
+    @include d(s) {
+      width: 25%;
+    }
+  }
+}
+
+.credit-card {
+  display: flex;
+  flex-wrap: wrap;
+  input.cartao {
+    float: left;
+  }
+
+  input.cvv {
+   float: left;
+  }
+
+  label.cartao-card {
+    width: 70%;
+  }
+
+  label.cvv-card {
+    margin-left: -6%;
+    width: 20%;
+  }
+
+  @include d(s) {
+    display: block;
+
+    input.cartao, input.cvv {
+      float: none;
+    }
+
+    label.cartao-card {
+      margin-top: 5px;
+      width: 100%;
+    }
+    input.cartao { 
+      margin: 0px;
+    }
+    label.cvv-card { 
+      margin-left: 10%;
+      margin-top: 5px;
+    }
+
   }
 }

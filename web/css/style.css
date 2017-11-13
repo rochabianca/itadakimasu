@@ -989,3 +989,51 @@ input[type=radio] {
   display: inline-block;
   width: 15%;
 }
+
+@media screen and (max-width: 759px) {
+  .dinheiro input {
+    width: 25%;
+  }
+}
+
+.credit-card {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.credit-card input.cartao {
+  float: left;
+}
+
+.credit-card input.cvv {
+  float: left;
+}
+
+.credit-card label.cartao-card {
+  width: 70%;
+}
+
+.credit-card label.cvv-card {
+  margin-left: -6%;
+  width: 20%;
+}
+
+@media screen and (max-width: 759px) {
+  .credit-card {
+    display: block;
+  }
+  .credit-card input.cartao, .credit-card input.cvv {
+    float: none;
+  }
+  .credit-card label.cartao-card {
+    margin-top: 5px;
+    width: 100%;
+  }
+  .credit-card input.cartao {
+    margin: 0px;
+  }
+  .credit-card label.cvv-card {
+    margin-left: 10%;
+    margin-top: 5px;
+  }
+}
