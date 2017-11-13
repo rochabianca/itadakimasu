@@ -553,6 +553,20 @@ img {
   margin: 10px 0px;
 }
 
+.subtitulo-menor {
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.125em;
+  line-height: 1.66667em;
+  margin-bottom: 15px;
+}
+
+.subtitulo-menor::after {
+  margin: 5px 0px;
+  width: 30px;
+}
+
 .menor {
   color: #fff;
   margin-bottom: 15px;
@@ -616,6 +630,16 @@ hr.linha {
 
 .btn-roxo:hover {
   background: #000000;
+}
+
+p {
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-size: 0.875em;
+  line-height: 1.42857em;
+}
+
+b {
+  font-weight: bold;
 }
 
 .btn-roxo-escuro {
@@ -1036,4 +1060,17 @@ input[type=radio] {
     margin-left: 10%;
     margin-top: 5px;
   }
+}
+
+.carrinho p {
+  padding-bottom: 5px;
+}
+
+.circle-size {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+a {
+  color: #000;
 }

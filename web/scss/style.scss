@@ -73,6 +73,16 @@ img {
   }
 }
 
+.subtitulo-menor {
+  @include tipo-1(18);
+  margin-bottom: 15px;
+
+  &::after {
+    margin: 5px 0px;
+    width: 30px;
+  }
+}
+
 .menor {
   color: $branco;
   margin-bottom: 15px;
@@ -128,6 +138,14 @@ hr.linha {
   &:hover {
     background: #000000;
   }
+}
+
+p {
+  @include tipo-2(14);
+}
+
+b {
+  font-weight: bold;
 }
 
 
@@ -394,4 +412,17 @@ input[type=radio] {
     }
 
   }
+}
+
+.carrinho p {
+  padding-bottom: 5px;
+}
+
+.circle-size {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+a {
+  color: $preto;
 }
