@@ -83,6 +83,12 @@ img {
   }
 }
 
+.tira-after {
+  &::after {
+    width: 0px;
+
+  }
+}
 .menor {
   color: $branco;
   margin-bottom: 15px;
@@ -414,6 +420,17 @@ input[type=radio] {
   }
 }
 
+.carrinho {
+  @include d(s) {
+    p, h2 {
+      text-align: center;
+    }
+    h2::after {
+      margin: 0 auto;
+    }
+  }
+}
+
 .carrinho p {
   padding-bottom: 5px;
 }
@@ -425,4 +442,26 @@ input[type=radio] {
 
 a {
   color: $preto;
+}
+
+.center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.micro-space {
+  margin-bottom: 20px;
+}
+
+.linha-preta {
+  display: block;
+  height: 6px;
+  color: $preto;
+  background: $preto;
+}
+
+.prato img {
+  @include d(s) {
+    margin: 0 auto;
+  }
 }

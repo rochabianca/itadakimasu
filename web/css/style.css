@@ -567,6 +567,10 @@ img {
   width: 30px;
 }
 
+.tira-after::after {
+  width: 0px;
+}
+
 .menor {
   color: #fff;
   margin-bottom: 15px;
@@ -1062,6 +1066,15 @@ input[type=radio] {
   }
 }
 
+@media screen and (max-width: 759px) {
+  .carrinho p, .carrinho h2 {
+    text-align: center;
+  }
+  .carrinho h2::after {
+    margin: 0 auto;
+  }
+}
+
 .carrinho p {
   padding-bottom: 5px;
 }
@@ -1073,4 +1086,26 @@ input[type=radio] {
 
 a {
   color: #000;
+}
+
+.center {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.micro-space {
+  margin-bottom: 20px;
+}
+
+.linha-preta {
+  display: block;
+  height: 6px;
+  color: #000;
+  background: #000;
+}
+
+@media screen and (max-width: 759px) {
+  .prato img {
+    margin: 0 auto;
+  }
 }
